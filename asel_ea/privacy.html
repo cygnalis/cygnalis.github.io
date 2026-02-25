@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - ASEL Control General [E-A]</title>
+    <title>Política de Privacidad - ASEL Employee Attendance [E-A]</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
         h1, h2, h3 { color: #02569B; }
@@ -14,46 +14,61 @@
 <body>
     <div class="header">
         <h1>Política de Privacidad</h1>
-        <h3>ASEL Control General [E-A]</h3>
+        <h3>ASEL Employee Attendance [E-A]</h3>
     </div>
     
-    <h2>1. Introducción</h2>
-    <p>La presente Política de Privacidad describe cómo <strong>ASEL Control General [E-A]</strong> (en adelante, "la Aplicación") recopila, utiliza, protege y comparte la información de sus usuarios. Esta política se aplica a todos los servicios y operaciones gestionadas por la organización ASEL a través de la Aplicación web, móvil y de escritorio.</p>
+    <p><strong>Última actualización:</strong> 25 de febrero de 2026</p>
 
-    <h2>2. Recopilación de Información</h2>
-    <p>La Aplicación recopila la siguiente información cuando los usuarios interactúan con nuestros servicios:</p>
+    <p><strong>ASEL SAYEM SLP</strong> ("nosotros", "nuestro", o "ASEL") opera la aplicación móvil de uso interno ASEL Employee Attendance [E-A] (la "Aplicación"). Esta página le informa sobre nuestras políticas en materia de recopilación, uso y divulgación de datos e información personal cuando utiliza nuestra Aplicación.</p>
+
+    <p>El uso de esta Aplicación es estrictamente corporativo e interno para los empleados y contratistas registrados de ASEL SAYEM SLP.</p>
+
+    <h2>1. Recopilación y Uso de la Información</h2>
+    <p>Para utilizar la Aplicación con fines de control de asistencia, requerimos información personal y de dispositivo obligatoria.</p>
+
+    <h3>A. Información de Ubicación (Geolocalización)</h3>
     <ul>
-        <li><strong>Información de Autenticación:</strong> Credenciales de inicio de sesión, correo electrónico y datos asociados al proveedor de identidad (operado de forma segura mediante Supabase Auth).</li>
-        <li><strong>Datos Operativos:</strong> Información generada, modificada o leída sobre las actividades internas de ASEL (roles, permisos, historial de acciones y reportes asociados al usuario).</li>
-        <li><strong>Datos de Uso y Dispositivo:</strong> Estadísticas de rendimiento, sistema operativo e historial de accesos para auditorías internas de seguridad y optimización técnica.</li>
+        <li><strong>Por qué la recopilamos:</strong> La Aplicación requiere acceso a su ubicación precisa (GPS) y aproximada (red) de forma obligatoria. Esta información se colecta <em>exclusivamente en el momento de registrar</em> un evento de asistencia (Entrada, Salida, Descanso) para adjuntar las coordenadas a su registro de marcación.</li>
+        <li><strong>Uso de la Ubicación en Segundo Plano:</strong> La aplicación <em>no</em> rastrea su ubicación en segundo plano de manera continua. El acceso al GPS sólo se activa cuando el usuario interactúa explícitamente con los botones del panel de control de asistencia en la interfaz principal.</li>
+        <li><strong>Detección de Fraude:</strong> La aplicación verifica activamente si los servicios de ubicación han sido alterados (ubicaciones simuladas/"Mock Locations") para garantizar la integridad institucional.</li>
     </ul>
 
-    <h2>3. Uso de la Información</h2>
-    <p>Los datos recopilados se utilizan total y exclusivamente para:</p>
+    <h3>B. Información de la Cuenta</h3>
     <ul>
-        <li>Proporcionar y mantener los servicios internos de la organización ASEL.</li>
-        <li>Gestionar protocolos de autorización, roles y perfiles mediante reglas de nivel de base de datos (Row Level Security - RLS).</li>
-        <li>Mejorar y depurar la estabilidad y experiencia de usuario de la Aplicación.</li>
-        <li>Cumplir con regulaciones de auditoría operativa de ASEL.</li>
+        <li>Para acceder al sistema, la Aplicación colecciona y almacena de forma segura su identificador interno, correo electrónico proporcionado por la empresa, nombre completo y rol.</li>
     </ul>
 
-    <h2>4. Protección de Datos y Privacidad Inquebrantable</h2>
-    <p>Aplicamos medidas técnicas y arquitectura rigurosas para asegurar su información:</p>
+    <h3>C. Registros de Dispositivo</h3>
     <ul>
-        <li>Todas las transmisiones entre la Aplicación y nuestros servidores de base de datos (PostgreSQL/Supabase) están cifradas (SSL/TLS).</li>
-        <li>El sistema maneja controles estrictos de seguridad bajo la política de Row Level Security de Supabase, asegurando que cada usuario únicamente pueda acceder a los datos que tiene permitido ver.</li>
-        <li>Para efectos funcionales de la app ASEL, <strong>no compartimos, vendemos ni alquilamos</strong> su información personal o corporativa a redes publicitarias o terceros.</li>
+        <li>Acordamos guardar información mínima del dispositivo (fecha, hora del sistema y validaciones del entorno offline) temporalmente en la memoria del teléfono para sincronizaciones diferidas cuando no hay acceso estable a Internet.</li>
     </ul>
 
-    <h2>5. Permisos de la Aplicación</h2>
-    <p>Para su correcto funcionamiento en dispositivos móviles y de escritorio, la aplicación puede solicitar permisos nativos como el de almacenamiento, notificaciones locales y acceso general a red, con el único fin de proveer los datos operativos y reportes pdf de su propia cuenta de ASEL.</p>
+    <h2>2. Almacenamiento y Seguridad de Datos</h2>
+    <p>Todos los datos (coordenadas, horarios y perfiles) son cifrados y transmitidos en tiempo real a servidores seguros en la nube administrados bajo la infraestructura de <strong>Supabase</strong>.</p>
+    <ul>
+        <li>Los datos de asistencia están protegidos por políticas estrictas de Seguridad a Nivel de Fila (RLS - Row Level Security), garantizando que un empleado solo pueda ver sus propios registros, mientras que los roles administrativos (Recursos Humanos) son los únicos autorizados para procesar información grupal.</li>
+    </ul>
 
-    <h2>6. Contacto y Derechos de Usuario</h2>
-    <p>En caso de duda y con pleno derecho corporativo, el usuario de la Aplicación puede acudir a los administradores del sistema o gestores de Recursos Humanos de la organización ASEL, para revisión, rectificación o limitación de los datos gestionados en la plataforma.</p>
+    <h2>3. Retención de Datos</h2>
+    <p>Los datos históricos de asistencia se retendrán en nuestra base de datos mientras mantenga un vínculo activo con ASEL SAYEM SLP o según las regulaciones laborales y fiscales aplicables lo exijan para la auditoría de planillas empresariales.</p>
+
+    <h2>4. Compartición con Terceros</h2>
+    <p>Bajo ninguna circunstancia venderemos, alquilaremos o intercambiaremos la información de identidad o ubicación del personal con agencias publicitarias o de terceros ajenas a la misión principal del software.</p>
+    <ul>
+        <li><strong>Excepciones técnicas:</strong> Utilizamos Supabase como infraestructura Backend-as-a-Service (BaaS) operativa obligatoria.</li>
+    </ul>
+
+    <h2>5. Derechos de Privacidad del Usuario</h2>
+    <p>Debido a la naturaleza administrativa del sistema, los registros de asistencia no se pueden alterar manualmente desde el lado del usuario para prevenir auditorías defectuosas. Para correcciones de ausencias, justificaciones médicas o problemas técnicos del reloj marcador, el empleado debe comunicarse internamente con el departamento de RR.HH.</p>
+
+    <h2>6. Cambios a Esta Política</h2>
+    <p>Nos reservamos el derecho de actualizar esta Política de Privacidad de vez en cuando. Cualquier actualización importante le será notificada a través del departamento administrativo de ASEL o mediante avisos de actualización interna de la plataforma.</p>
+
+    <h2>7. Contacto</h2>
+    <p>Si tiene alguna pregunta sobre esta Política de Privacidad, el manejo de su ubicación o sus datos de perfil, comuníquese internamente con su responsable directo o el administrador de TI encargado de ASEL SAYEM SLP.</p>
 
     <div class="footer">
-        <p>Última actualización: 25 de Febrero de 2026</p>
-        <p>Organización ASEL - Todos los derechos reservados.</p>
+        <p>ASEL SAYEM SLP - Todos los derechos reservados.</p>
     </div>
 </body>
 </html>
