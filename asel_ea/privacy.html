@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - ASEL Control General [E-A]</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3 { color: #02569B; }
+        .header { text-align: center; margin-bottom: 40px; }
+        .footer { text-align: center; margin-top: 60px; font-size: 0.9em; color: #777; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Política de Privacidad</h1>
+        <h3>ASEL Control General [E-A]</h3>
+    </div>
+    
+    <h2>1. Introducción</h2>
+    <p>La presente Política de Privacidad describe cómo <strong>ASEL Control General [E-A]</strong> (en adelante, "la Aplicación") recopila, utiliza, protege y comparte la información de sus usuarios. Esta política se aplica a todos los servicios y operaciones gestionadas por la organización ASEL a través de la Aplicación web, móvil y de escritorio.</p>
+
+    <h2>2. Recopilación de Información</h2>
+    <p>La Aplicación recopila la siguiente información cuando los usuarios interactúan con nuestros servicios:</p>
+    <ul>
+        <li><strong>Información de Autenticación:</strong> Credenciales de inicio de sesión, correo electrónico y datos asociados al proveedor de identidad (operado de forma segura mediante Supabase Auth).</li>
+        <li><strong>Datos Operativos:</strong> Información generada, modificada o leída sobre las actividades internas de ASEL (roles, permisos, historial de acciones y reportes asociados al usuario).</li>
+        <li><strong>Datos de Uso y Dispositivo:</strong> Estadísticas de rendimiento, sistema operativo e historial de accesos para auditorías internas de seguridad y optimización técnica.</li>
+    </ul>
+
+    <h2>3. Uso de la Información</h2>
+    <p>Los datos recopilados se utilizan total y exclusivamente para:</p>
+    <ul>
+        <li>Proporcionar y mantener los servicios internos de la organización ASEL.</li>
+        <li>Gestionar protocolos de autorización, roles y perfiles mediante reglas de nivel de base de datos (Row Level Security - RLS).</li>
+        <li>Mejorar y depurar la estabilidad y experiencia de usuario de la Aplicación.</li>
+        <li>Cumplir con regulaciones de auditoría operativa de ASEL.</li>
+    </ul>
+
+    <h2>4. Protección de Datos y Privacidad Inquebrantable</h2>
+    <p>Aplicamos medidas técnicas y arquitectura rigurosas para asegurar su información:</p>
+    <ul>
+        <li>Todas las transmisiones entre la Aplicación y nuestros servidores de base de datos (PostgreSQL/Supabase) están cifradas (SSL/TLS).</li>
+        <li>El sistema maneja controles estrictos de seguridad bajo la política de Row Level Security de Supabase, asegurando que cada usuario únicamente pueda acceder a los datos que tiene permitido ver.</li>
+        <li>Para efectos funcionales de la app ASEL, <strong>no compartimos, vendemos ni alquilamos</strong> su información personal o corporativa a redes publicitarias o terceros.</li>
+    </ul>
+
+    <h2>5. Permisos de la Aplicación</h2>
+    <p>Para su correcto funcionamiento en dispositivos móviles y de escritorio, la aplicación puede solicitar permisos nativos como el de almacenamiento, notificaciones locales y acceso general a red, con el único fin de proveer los datos operativos y reportes pdf de su propia cuenta de ASEL.</p>
+
+    <h2>6. Contacto y Derechos de Usuario</h2>
+    <p>En caso de duda y con pleno derecho corporativo, el usuario de la Aplicación puede acudir a los administradores del sistema o gestores de Recursos Humanos de la organización ASEL, para revisión, rectificación o limitación de los datos gestionados en la plataforma.</p>
+
+    <div class="footer">
+        <p>Última actualización: 25 de Febrero de 2026</p>
+        <p>Organización ASEL - Todos los derechos reservados.</p>
+    </div>
+</body>
+</html>
